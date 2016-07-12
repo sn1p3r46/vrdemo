@@ -1,0 +1,8 @@
+usage: deployer add|remove webService_name [options]
+  option:
+    -p, --port    port_number        port number for the nginx configuration file [default:80]
+    -d, --domain  domain_name        domain name for the nginx configuration file [default: not set]
+    -l, --lang    node|python|php  set language for dependency resolving after push event [default:php]
+    -h, --help    show this help
+
+deployer add chillbooth -d chillbooth.sfcoding.com -l node
